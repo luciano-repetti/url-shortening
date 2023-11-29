@@ -1,5 +1,6 @@
 import Header from "./header"
-import SectionHero from "./sections"
+import SectionHero from "./sections/Hero"
+import SectionStatics from "./sections/Statistics"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <SectionHero />
+      <SectionStatics />
     </>
   )
 }
