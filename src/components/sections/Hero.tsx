@@ -11,7 +11,7 @@ const SectionHero = () => {
                     <Button className={"py-2 px-16 rounded-3xl"} title="Get Started" />
                 </article>
                 <article className="w-full xl:w-1/2 flex flex-col">
-                    <picture>
+                    <picture className="flex justify-center xl:justify-start">
                         <img className="select-none" src="/public/images/illustration-working.svg" alt="Illustration of working at home office." />
                     </picture>
                 </article>

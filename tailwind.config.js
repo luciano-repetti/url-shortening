@@ -41,6 +41,12 @@ export default {
       fontSize: {
         body: "18px",
       },
+      backgroundImage: {
+        'shorten-desktop': "url(/public/background/bg-shorten-desktop.svg)",
+        'shorten-mobile': "url(/public/background/bg-shorten-mobile.svg)",
+        'boost-desktop': "url(/public/background/bg-boost-desktop.svg)",
+        'boost-mobile': "url(/public/background/bg-boost-mobile.svg)",
+      }
     },
   },
 
