@@ -26,7 +26,7 @@ const UrlStorage: React.FC<UrlStorageProps> = ({ state }) => {
       <div className="w-full flex flex-col gap-4 pt-8 2xl:w-3/4">
         {shortUrls?.length > 0 ? (
           <div className='w-full flex justify-end'>
-            <Button action={() => clearAll()} title={"Delete all"} className='bg-transparent text-neutral-950 hover:bg-transparent active:bg-transparent hover:underline' />
+            <Button action={() => clearAll()} title={"Delete all"} className='text-neutral-950 bg-transparent hover:bg-transparent active:bg-transparent hover:underline' />
           </div>
         ) : null}
         {lastTenUrls.length > 0 &&
