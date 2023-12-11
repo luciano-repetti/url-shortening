@@ -1,7 +1,9 @@
 import express from 'express';
+import cors from 'cors';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 
 const app = express();
+app.use(cors());
 
 // Configuración de CORS para permitir solicitudes desde cualquier origen
 app.use((req, res, next) => {
