@@ -28,7 +28,7 @@ const ShortenUrl = () => {
     }
 
     try {
-      const response = await axios.post('https://url-shortening-sigma.vercel.app/api/v1/shorten', {
+      const response = await axios.post('http://localhost:3001/api/v1/shorten', {
         url: inputUrl,
       });
 
