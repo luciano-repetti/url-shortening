@@ -12,7 +12,7 @@ const SectionHero = () => {
                 </article>
                 <article className="w-full xl:w-1/2 flex flex-col">
                     <picture className="flex justify-center xl:justify-start">
-                        <img className="select-none" src="/public/images/illustration-working.svg" alt="Illustration of working at home office." />
+                        <img className="select-none" src="/images/illustration-working.svg" alt="Illustration of working at home office." />
                     </picture>
                 </article>
             </div>
