@@ -8,9 +8,14 @@ const UrlStorage: React.FC<UrlStorageProps> = ({ state }) => {
 
   const clearUrl = (id: string) => {
     const updatedUrls = shortUrls.filter((url) => url.id !== id)
-    localStorage.clear()
+    localStorage.removeItem('shortenedUrls')
     localStorage.setItem('shortenedUrls', JSON.stringify(updatedUrls))
     setShortUrls(updatedUrls)
+  }
+
+  const clearAll = () => {
+    localStorage.removeItem('shortenedUrls')
+    setShortUrls([])
   }
 
    // Mostrar solo los últimos 10 elementos
@@ -19,6 +24,11 @@ const UrlStorage: React.FC<UrlStorageProps> = ({ state }) => {
   return (
     <section className="flex justify-center w-full mt-16 lg:mt-0 px-8">
       <div className="w-full flex flex-col gap-4 pt-8 2xl:w-3/4">
+        {shortUrls?.length > 0 ? (
+          <div className='w-full flex justify-end'>
+            <Button action={() => clearAll()} title={"Delete all"} className='bg-transparent text-neutral-950 hover:bg-transparent active:bg-transparent hover:underline' />
+          </div>
+        ) : null}
         {lastTenUrls.length > 0 &&
           lastTenUrls.map((url) => (
             <ShortenedUrl
